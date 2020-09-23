@@ -1,13 +1,17 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import Recommended from './components/Recommended';
 
 function App() {
   return (
     <div className="app">
          <Header />
-      <h1>please make me a better developer</h1>
-   
+          <div className="app_page">
+            <Sidebar />
+            <Recommended />
+          </div>
     </div>
 
     
