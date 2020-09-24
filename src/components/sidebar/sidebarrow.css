@@ -14,6 +14,7 @@
     margin-left: 20px;
     font-size: 12px;
     font-weight: light;
+    color: grey;
     text-transform: capitalize;
 }
 
@@ -28,6 +29,7 @@
 
 .sidebarRow:hover > .sidebarRow_title{
     font-weight: bolder;
+
 }
 
 .sidebarrow.selected{
@@ -40,4 +42,5 @@
 
 .sidebarrow.selected > .sidebarRow_title{
     font-weight: bold;
+    
 }

@@ -1,21 +1,27 @@
-import React from 'react';
-import './App.css';
-import Header from './components/Header';
-import Sidebar from './components/Sidebar';
-import Recommended from './components/Recommended';
 
-function App() {
-  return (
-    <div className="app">
-         <Header />
-          <div className="app_page">
-            <Sidebar />
-            <Recommended />
-          </div>
-    </div>
+import "./App.css";
+import Header from "./components/navbar/Header";
+import Home from './components/Home.js'
+import Search from './components/search/Search'
+import {  Route, Switch } from "react-router-dom";
+import React, { Component } from 'react'
 
+
+export default class App extends Component {
+ render() {
+    return (
     
-  );
+        <>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/result/:slug" component={Search} />
+        
+        </Switch>
+    </>
+
+    )
+  }
 }
 
-export default App;
+
