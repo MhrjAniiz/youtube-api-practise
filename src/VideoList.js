@@ -19,7 +19,7 @@ export default function VideoList({ video, handleSelectedVideo }) {
         <h1>Search results!!</h1>
       ) : (
         <h1>
-          Search and Go <span>😉</span>
+          Search and Go 
         </h1>
       )}
       {video.length > 0 ? (
